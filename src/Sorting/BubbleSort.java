@@ -18,7 +18,7 @@ public class BubbleSort {
 
         for(int i=0; i< arr.length;i++){
             for (int j = 1; j < arr.length - i; j++) {
-                if (arr[j] < arr[j-1]) {
+                if (arr[j] < arr[j-1]) { // If we did the > sign then it will sort in descending order
                     int temp = arr[j];
                     arr[j] = arr[j-1];
                     arr[j-1] = temp;
